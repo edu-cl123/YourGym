@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- header section start -->
+    <div class="header_section">
+        <div class="header_main">
+
+            <div class="container-fluid">
+                <div class="logo"><a (click)="nav.irIndex()"><img src="./assets/logo.png"></a></div>
+                <div class="menu_main">
+                    <ul>
+                        <li class="active"><a (click)="nav.irIndex() ">Home</a></li>
+                        <li><a (click)="nav.irPrice()">Services</a></li>
+                        <li><a (click)="nav.irRegistrations()">Class</a></li>
+                        <li><a (click)="nav.irProfile()">Profile</a></li>
+                        <li><a (click)="nav.irAbout()">About</a></li>
+                        <li><a (click)="nav.irLogin()">login</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header section end -->
+    <!-- contact section start -->
+    <div class="contact_section layout_padding">
+        <div class="container">
+            <button (click)="createForm()" *ngIf="isAdmin" style="width: 50%; margin-left:280px;margin-bottom: 30px;" class="btn btn-danger btn-block">Crear nueva clase</button>
+
+            <div *ngFor="let item of clases;" >
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.name}}</h5>
+                        <p class="card-text">{{item.descripcion}}</p>
+                            <button *ngIf="!isAdmin" (click)="apuntarse(item)" style="width: 100%;" class="btn btn-primary btn-block">Inscribirse</button>
+                            <button  (click)="eliminarclass(item.id)" *ngIf="isAdmin" style="width: 100%;" class="btn btn-danger btn-block">Eliminar</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>

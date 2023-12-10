@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- header section start -->
+    <div class="header_section">
+        <div class="header_main">
+
+            <div class="container-fluid">
+                <div class="logo"><a (click)="nav.irIndex()"><img src="./assets/logo.png"></a></div>
+                <div class="menu_main">
+                    <ul>
+                        <li class="active"><a (click)="nav.irIndex() ">Home</a></li>
+                        <li><a (click)="nav.irPrice()">Services</a></li>
+                        <li><a (click)="nav.irRegistrations()">Class</a></li>
+                        <li><a (click)="nav.irProfile()">Profile</a></li>
+                        <li><a (click)="nav.irAbout()">About</a></li>
+                        <li><a (click)="nav.irLogin()">login</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- banner section start -->
+        <div class="banner_section layout_padding">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <h1 class="banner_taital">Jack Dempsey</h1>
+                            <p class="banner_text">Un campeón es alguien que se levanta cuando no puede</p>
+                            <div class="read_bt"><a (click)="nav.irPrice()">Precios</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner section end -->
+    </div>
+    <!-- header section end -->
+    <!-- services section start -->
+    <div class="services_section layout_padding">
+        <div class="container">
+            <h1 class="services_taital">Servicios </h1>
+            <p class="services_text">Disponemos de muchos mas servícios que puede cosultar en la sección de servícios.</p>
+            <div class="services_section_2">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div><img src="./assets/img-1.png" class="services_img"></div>
+                        <div class="btn_main"><a href="">Boxeo</a></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div><img src="./assets/img-2.png" class="services_img"></div>
+                        <div class="btn_main active"><a href="">Musculatura</a></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div><img src="./assets/img-3.png" class="services_img"></div>
+                        <div class="btn_main"><a href="">Yoga</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services section end -->
+
+    <!-- choose section start -->
+    <div class="choose_section layout_padding">
+        <div class="container">
+            <h1 class="choose_taital">Por qué elegirnos</h1>
+            <p class="choose_text">Elige nuestro gimnasio para una experiencia fitness excepcional. Con entrenadores
+                altamente calificados, instalaciones de calidad y una variedad de clases adaptadas a todos los niveles,
+                te ofrecemos más que solo ejercicio. Nuestra comunidad acogedora y enfoque integral te ayudarán a
+                alcanzar tus metas de bienestar de manera inspiradora y transformadora. </p>
+
+        </div>
+    </div>
+    <!-- choose section end -->
+
+</body>
+
+</html>

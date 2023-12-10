@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+   <!-- header section start -->
+   <div class="header_section">
+      <div class="header_main">
+         <div class="container-fluid">
+            <div class="logo"><a (click)="nav.irIndex()"><img src="./assets/logo.png"></a></div>
+            <div class="menu_main">
+               <ul>
+                  <li class="active"><a (click)="nav.irIndex() ">Home</a></li>
+                  <li><a (click)="nav.irPrice()">Services</a></li>
+                  <li><a (click)="nav.irRegistrations()">Class</a></li>
+                  <li><a (click)="nav.irProfile()">Profile</a></li>
+                  <li><a (click)="nav.irAbout()">About</a></li>
+                  <li><a (click)="nav.irLogin()">login</a></li>
+
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- header section end -->
+   <!-- about section start -->
+   <div class="about_section layout_padding">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="about_taital_main">
+                  <h1 class="about_taital">Sobre Nosotros</h1>
+                  <p class="about_text">
+                     Sumérgete en la esencia de nuestro gimnasio ubicado en Montemayor, Córdoba. Aquí, fusionamos la pasión por el fitness con el vibrante espíritu de
+                     la comunidad local. En el corazón de Montemayor, hemos creado un espacio donde la salud y el
+                     bienestar se encuentran con la energía y la calidez de nuestra ciudad. Descubre cómo nuestra
+                     dedicación a la excelencia en el entrenamiento se combina con el compromiso de ser un componente
+                     integral de la vida activa y saludable en Montemayor. Únete a nosotros para experimentar una fusión
+                     única de fitness, comunidad y bienestar en cada sesión. ¡Estamos aquí para impulsar tu
+                     transformación y celebrar juntos los logros! </p>
+               </div>
+            </div>
+            <div class="col-md-6 padding_right_0">
+               <div><img src="./assets/about-img.png" class="about_img"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <!-- header section start -->
+   <div class="header_section">
+      <div class="header_main">
+         <div class="container-fluid">
+            <div class="logo"><a (click)="nav.irIndex()"><img src="./assets/logo.png"></a></div>
+            <div class="menu_main">
+               <ul>
+                  <li class="active"><a (click)="nav.irIndex() ">Home</a></li>
+                  <li><a (click)="nav.irPrice()">Services</a></li>
+                  <li><a (click)="nav.irRegistrations()">Class</a></li>
+                  <li><a (click)="nav.irProfile()">Profile</a></li>
+                  <li><a (click)="nav.irAbout()">About</a></li>
+                  <li><a (click)="nav.irLogin()">login</a></li>
+
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- header section end -->
+   <!-- services section start -->
+   <div class="services_section layout_padding">
+      <div class="container">
+         <h1 class="services_taital">Servicios </h1>
+         <div class="services_section_2">
+            <div class="row">
+               <div class="col-md-4">
+                  <div><img src="./assets/img-1.png" class="services_img"></div>
+                  <div class="btn_main"><a href="">Boxeo - 30€</a></div>
+               </div>
+               <div class="col-md-4">
+                  <div><img src="./assets/img-2.png" class="services_img"></div>
+                  <div class="btn_main active"><a href="">Musculatura - 20€</a></div>
+               </div>
+               <div class="col-md-4">
+                  <div><img src="./assets/img-3.png" class="services_img"></div>
+                  <div class="btn_main"><a href="">Yoga - 15€</a></div>
+               </div>
+            </div>
+         </div>
+         <div class="services_section_2">
+            <div class="row">
+               <div class="col-md-4">
+                  <div><img src="./assets/img-4.png" class="services_img"></div>
+                  <div class="btn_main"><a href="">KUNG FU - 40€</a></div>
+               </div>
+               <div class="col-md-4">
+                  <div><img src="./assets/img-5.png" class="services_img"></div>
+                  <div class="btn_main active"><a href="">Zumba - 10€</a></div>
+               </div>
+               <div class="col-md-4">
+                  <div><img src="./assets/img-6.png" class="services_img"></div>
+                  <div class="btn_main"><a href="">Dietética - 7€</a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</body>
+
+</html>
