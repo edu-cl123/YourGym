@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- header section start -->
+    <div class="header_section">
+        <div class="header_main">
+
+            <div class="container-fluid">
+                <div class="logo"><a (click)="nav.irIndex()"><img src="./assets/logo.png"></a></div>
+                <div class="menu_main">
+                    <ul>
+                        <li class="active"><a (click)="nav.irIndex() ">Home</a></li>
+                        <li><a (click)="nav.irPrice()">Services</a></li>
+                        <li><a (click)="nav.irRegistrations()">Class</a></li>
+                        <li><a (click)="nav.irAbout()">About</a></li>
+                        @if(!login){
+                        <li><a (click)="nav.irLogin()">login</a></li>
+                        }
+                        @else{
+                        <li><a (click)="nav.irProfile()">Profile</a></li>
+
+                        <li><a (click)="nav.irLogin()">Cerrar Sesión</a></li>
+                        }
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header section end -->
+    <!-- contact section start -->
+    <div class="contact_section layout_padding">
+        <div class="container">
+            <h1 class="contact_taital">Crear nueva clase</h1>
+            <div>
+                <form [formGroup]="adminForm" (ngSubmit)="onSubmit()">
+                    <div class="email_text">
+                        <div class="form-group">
+                            <input type="text" class="email-bt" formControlName="name" placeholder="Nombre" name="user">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="email-bt" formControlName="descripcion" placeholder="Descripcion"
+                                name="Email">
+                        </div>
+
+                        <button type="submit" style="width: 100%;" class="btn btn-primary btn-block">Crear
+                            clase</button>
+
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- contact section end -->
+</body>
+
+</html>
